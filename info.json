@@ -1,28 +1,33 @@
 {
-    "identifier": "bob.openai.explainer",
+    "identifier": "bob.newopenai.explainer",
     "version": "1.3.0",
     "category": "translate",
     "name": "ChatGPT解释",
     "summary": "使用OpenAI的ChatGPT模型对文本进行解释",
     "icon": "",
     "author": "jiayouzl",
-    "homepage": "https://github.com/jiayouzl/bob-openai-explainer",
-    "appcast": "https://github.com/jiayouzl/bob-openai-explainer/raw/main/appcast.json",
-    "minBobVersion": "1.8.0",
+    "homepage": "https://github.com/jiayouzl/bob-newopenai-explainer",
+    "appcast": "https://github.com/jiayouzl/bob-newopenai-explainer/raw/main/appcast.json",
+    "minBobVersion": "1.21.0",
     "options": [
         {
             "identifier": "endpoint",
             "type": "text",
-            "title": "endpoint",
+            "title": "API Base URL",
             "defaultValue": "https://api.openai.com/v1",
             "textConfig": {
                 "type": "visible"
-            }
+            },
+            "desc": "OpenAI API 基础 URL，默认为 https://api.openai.com/v1"
         },
         {
             "identifier": "openaiApiKey",
             "type": "text",
-            "title": "OpenAI API Key"
+            "title": "OpenAI API Key",
+            "textConfig": {
+                "type": "secure",
+                "placeholderText": "在此输入你的OpenAI API Key"
+            }
         },
         {
             "identifier": "prompt",

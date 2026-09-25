@@ -69,7 +69,10 @@ function translate(query, completion) {
                 result: {
                     from: query.detectFrom,
                     to: query.detectTo,
-                    toParagraphs: [targetText],
+                    content: {
+                        format: "markdown",
+                        text: targetText,
+                    },
                     toDict:
                         $option.showExtraInfo === "true"
                             ? {
@@ -118,7 +121,10 @@ function translate(query, completion) {
             result: {
                 from: query.detectFrom,
                 to: query.detectTo,
-                toParagraphs: [targetText],
+                content: {
+                    format: "markdown",
+                    text: targetText,
+                },
             },
         });
 

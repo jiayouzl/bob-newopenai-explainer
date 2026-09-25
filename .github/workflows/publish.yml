@@ -25,7 +25,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            bob-openai-explainer.bobplugin
+            bob-newopenai-explainer.bobplugin
       - 
         name: Update resources
         uses: test-room-7/action-update-file@v1

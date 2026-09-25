@@ -1,6 +1,6 @@
 <p align="center"><img width="100" src="icon.png"></img></p>
 
-基于 [Mopip77](https://github.com/Mopip77/bob-openai-explainer/releases) 二次开发，兼容bob新版markdown渲染。
+基于 [Mopip77](https://github.com/Mopip77/bob-openai-explainer/releases) 二次开发，兼容bob新版markdown渲染，删除过时模型添加新的模型。
 
 # bob-openai-explainer
 
@@ -8,7 +8,7 @@
 
 ## Install
 
-在 [Release](https://github.com/Mopip77/bob-openai-explainer/releases) 页面下载并安装
+在 [Release](https://github.com/jiayouzl/bob-newopenai-explainer/releases) 页面下载并安装
 
 ## Usage
 
@@ -26,7 +26,7 @@
 
 - [x] 基础调用
 - [x] 支持插件自动更新
-- [x] 支持流式输出，参考 <https://github.com/openai-translator/bob-plugin-openai-translator/pull/83>
+- [x] 支持流式输出，参考 <https://github.com/nextai-translator/bob-plugin-openai-translator/pull/83>
 - [x] 自定义 endpoint
 - [x] 支持自定义模型
 - [x] 支持展示额外调用信息(model、token usage)
