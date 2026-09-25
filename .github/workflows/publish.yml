@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - '*.*.*'
+  # 允许您从“操作”选项卡手动运行此工作流
+  # workflow_dispatch:
 
 permissions:
   contents: write
