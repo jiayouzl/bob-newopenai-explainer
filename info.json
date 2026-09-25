@@ -1,0 +1,94 @@
+{
+    "identifier": "bob.openai.explainer",
+    "version": "1.3.0",
+    "category": "translate",
+    "name": "ChatGPT解释",
+    "summary": "使用OpenAI的ChatGPT模型对文本进行解释",
+    "icon": "",
+    "author": "jiayouzl",
+    "homepage": "https://github.com/jiayouzl/bob-openai-explainer",
+    "appcast": "https://github.com/jiayouzl/bob-openai-explainer/raw/main/appcast.json",
+    "minBobVersion": "1.8.0",
+    "options": [
+        {
+            "identifier": "endpoint",
+            "type": "text",
+            "title": "endpoint",
+            "defaultValue": "https://api.openai.com/v1",
+            "textConfig": {
+                "type": "visible"
+            }
+        },
+        {
+            "identifier": "openaiApiKey",
+            "type": "text",
+            "title": "OpenAI API Key"
+        },
+        {
+            "identifier": "prompt",
+            "type": "text",
+            "title": "Prompt",
+            "defaultValue": "简明扼要地解释",
+            "textConfig": {
+                "type": "visible"
+            }
+        },
+        {
+            "identifier": "model",
+            "type": "menu",
+            "defaultValue": "gpt-5.4-mini",
+            "title": "Model",
+            "menuValues": [
+                {
+                    "title": "gpt-5.4-mini",
+                    "value": "gpt-5.4-mini"
+                },
+                {
+                    "title": "gpt-5.5",
+                    "value": "gpt-5.5"
+                },
+                {
+                    "title": "gpt-5.6-luna",
+                    "value": "gpt-5.6-luna"
+                },
+                {
+                    "title": "gpt-6-astra",
+                    "value": "gpt-6-astra"
+                },
+                {
+                    "title": "gpt-6-sol",
+                    "value": "gpt-6-sol"
+                },
+                {
+                    "title": "gpt-6-luna",
+                    "value": "gpt-6-luna"
+                }
+            ]
+        },
+        {
+            "identifier": "specificModel",
+            "type": "text",
+            "title": "指定模型",
+            "textConfig": {
+                "type": "visible",
+                "placeholderText": "留空则使用Model配置的模型"
+            }
+        },
+        {
+            "identifier": "showExtraInfo",
+            "type": "menu",
+            "defaultValue": "false",
+            "title": "展示调用额外信息(模型, token消耗)",
+            "menuValues": [
+                {
+                    "title": "展示",
+                    "value": "true"
+                },
+                {
+                    "title": "不展示",
+                    "value": "false"
+                }
+            ]
+        }
+    ]
+}
