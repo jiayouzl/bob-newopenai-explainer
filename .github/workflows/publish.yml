@@ -3,7 +3,7 @@ name: Publish plugin artifacts
 on:
   push:
     tags:
-      - \d+\.\d+\.\d+
+      - '*.*.*'
 
 permissions:
   contents: write
